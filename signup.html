@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+	<title>HTML5 Assignment</title>
+	<style type="text/css">
+		body
+		{
+			background-color: #e6e6e6;
+		}
+		header
+		{
+			position:relative;
+			top:0px;
+			left:40px;
+		}
+		h1
+		{
+			color:#004d66;
+			font-family:calibri;
+		}
+		p
+		{
+			color:grey;
+			font-family:calibri;
+		}
+		h3
+		{
+			color:grey;
+			font-family:calibri;
+		}
+		span
+		{
+			color:#004d66;
+		}
+		section
+		{
+			height:400px;
+			width: 587px;
+			float: left;
+			padding:2px;
+			margin: 2px;
+			position: absolute;
+			left:40px;
+		}
+		input
+		{
+			width:550px;
+			height: 30px;
+			border: 1px solid red;
+			border-radius: 5px;
+			margin: 10px;
+			padding:5px;
+		}
+		#button
+		{
+			width:110px;
+			border-radius:0px;
+			border: 2px solid #004d66;
+			font-family:Arial;
+			color:#004d66;
+			background-color: #e6e6e6;
+			font-weight: bold;
+			float:right;
+		}
+	</style>
+	<script type="text/javascript">
+		function store()
+		{
+			if(typeof(Storage)!=="undefined")
+			{
+				var name=document.getElementById("name").value;
+				var email=document.getElementById("email").value;
+				var pwd=document.getElementById("pwd").value;
+				sessionStorage.u_name=name;
+				sessionStorage.email=email;
+				sessionStorage.pwd=pwd;
+			}
+			else 
+			{
+        		alert("Sorry, your browser does not support web storage...");
+    		}
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<h1>Enter the system</h1>
+		<p>Please Sign in here so that you can login.</p>
+	</header>
+	<section>
+		<h3>ARE YOU NEW? <span>REGISTER</span></h3>
+		<form action="login.html" method="post" id="form1" onsubmit="store();">
+			<input type="text" placeholder="User name" name="u.name" maxlength="40" autocomplete required id="name"><br>
+			<input type="email" placeholder="Email" name="email" maxlength="40" autocomplete required id='email'><br>
+			<input type="password" placeholder="Password" name="pwd1" required id='pwd'><br>
+			<input type="Submit" value="Register" id="button">
+		</form>
+	</section>
+
+</body>
+</html>

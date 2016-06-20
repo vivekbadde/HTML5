@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+	<title>HTML5 Assignment 3</title>
+	<style type="text/css">
+	body
+		{
+			background-color: #e6e6e6;
+		}
+		header
+		{
+			position:relative;
+			top:0px;
+			left:40px;
+		}
+		h1
+		{
+			color:#004d66;
+			font-family:calibri;
+		}
+		p
+		{
+			color:grey;
+			font-family:calibri;
+		}
+		section
+		{
+			height:800px;
+			width: 587px;
+			float: left;
+			padding:2px;
+			margin: 2px;
+			position: absolute;
+			left:40px;
+		}
+		input
+		{
+			width:550px;
+			height: 30px;
+			border: 1px solid red;
+			border-radius: 5px;
+			margin: 10px;
+			padding:5px;
+		}
+		select
+		{
+			width:350px;
+			height: 90px;
+			border: 1px solid red;
+			border-radius: 5px;
+			margin: 10px;
+			padding:5px;
+		}
+		#button
+		{
+			width:110px;
+			border-radius:0px;
+			border: 2px solid #004d66;
+			font-family:Arial;
+			color:#004d66;
+			background-color: #e6e6e6;
+			font-weight: bold;
+		}
+		#range
+		{
+			width:450px;
+		}
+		span
+		{
+			color:#004d66;
+			font-family:calibri;
+		}
+		#out
+		{
+			position: absolute;
+			top:520px;
+			left:560px;
+			font-weight: bold;
+			font-size: 15;
+			color:#004d66;
+			font-family:calibri;
+		}
+		</style>
+		<script type="text/javascript">
+			function calcvalue()
+			{
+				document.getElementById('puthere').innerHTML=document.getElementById('range').value;
+			}
+		</script>
+</head>
+<body>
+	<header>
+		<h1>Enter the system</h1>
+		<p>Please enter the following fields.</p>
+	</header>
+	<section>
+		<form  method="post" action="" autocomplete oninput="out.value=age.value">
+			<input type="email" name="email" placeholder="Email" required>
+			<input type="password" minlength="6" name="pwd" placeholder="Password"  autocpmplete="false" required>
+			<input type="url" name="url" placeholder="your Project URL here" required>
+			<input type="date" name="date" placeholder="Enter the date" required>
+			<input type='month' name="month" placeholder="Month" required>
+			<input type="week" name="week" placeholder="Week" required>
+			<input type="time" name="time" placeholder="Time" required>
+			<input type="color" name="color" placeholder="Color-Picker" value="#ff0000" required>
+			<span>0</span><input type="range" name="age" placeholder="Age" id="range" required value="0" min="0" max="100"><span>100</span>
+			<output for="age" name="out" id="out">0</output>
+			<datalist id="Hobbies" multiple>
+					<select multiple id = "hobby" name = "Hobbies">
+						<option value="Reading">Reading</option>
+						<option value="Movies">Movies</option>
+						<option value="Music">Music</option>
+						<option value="Sports">Sports</option>
+						<option value="Dance">Dance</option>
+						<option value="Cooking">Cooking</option>
+						<option value="Travelling">Travelling</option>
+				</select>	
+			</datalist>
+			<input type="text" list="Hobbies" name="hobbies" multiple placeholder="Hobbies" required>
+			<select multiple id = "hobby" name = "Hobbies">
+						<option value="Reading">Reading</option>
+						<option value="Movies">Movies</option>
+						<option value="Music">Music</option>
+						<option value="Sports">Sports</option>
+						<option value="Dance">Dance</option>
+						<option value="Cooking">Cooking</option>
+						<option value="Travelling">Travelling</option>
+			</select>		<br>
+			<input type="submit" value="Register" id="button">
+		</form>
+	</section>
+</body>
+</html>

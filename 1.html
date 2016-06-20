@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+	<title>HTML5 Assignment</title>
+	<style type="text/css">
+		body
+		{
+			background-color: #e6e6e6;
+		}
+		header
+		{
+			position:relative;
+			top:0px;
+			left:40px;
+		}
+		h1
+		{
+			color:#004d66;
+			font-family:calibri;
+		}
+		p
+		{
+			color:grey;
+			font-family:calibri;
+		}
+		h3
+		{
+			color:grey;
+			font-family:calibri;
+		}
+		span
+		{
+			color:#004d66;
+		}
+		section
+		{
+			height:400px;
+			width: 587px;
+			float: left;
+			padding:2px;
+			margin: 2px;
+			position: absolute;
+			left:40px;
+		}
+		input
+		{
+			width:550px;
+			height: 30px;
+			border: 1px solid red;
+			border-radius: 5px;
+			margin: 10px;
+			padding:5px;
+		}
+		#button
+		{
+			width:110px;
+			border-radius:0px;
+			border: 2px solid #004d66;
+			font-family:Arial;
+			color:#004d66;
+			background-color: #e6e6e6;
+			font-weight: bold;
+			float:right;
+		}
+		aside
+		{
+			height:400px;
+			width: 587px;
+			float:right;
+			background-color:#004d66; 
+			padding:2px;
+			margin: 2px;
+			position: absolute;
+			right:40px;
+			top:130px;
+		}
+		#asideh
+		{
+			color:#e6e6e6;
+			margin: 5px;
+			padding: 5px;
+		}
+		#checkbox
+		{
+			height:12px;
+			width:12px;
+		}
+		#checkboxtxt
+		{
+			color:#e6e6e6;
+			font-family: calibri;
+		}
+		#button2
+		{
+			width:110px;
+			border-radius:0px;
+			border: 2px solid orange;
+			font-family:Arial;
+			color:#e6e6e6;
+			background-color: #004d66;
+			font-weight: bold;
+			float:right;
+		}
+		#form2name,#form2pwd
+		{
+			border-color: white;
+		}
+		a
+		{
+			font-family: calibri;
+			color:#e6e6e6;
+			position:absolute;
+			bottom:170px;
+			right:10px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Enter the system</h1>
+		<p>Its necessary to login in Your account in order to sign up for a course.</p>
+	</header>
+	<section>
+		<h3>ARE YOU NEW? <span>REGISTER</span></h3>
+		<form action="" method="" id="form1" autocomplete>
+			<input type="text" placeholder="User name" name="u.name" maxlength="40" autocomplete required><br>
+			<input type="email" placeholder="Email" name="email" maxlength="40" autocomplete required><br>
+			<input type="password" placeholder="Password" name="pwd1" required><br>
+			<input type="password" placeholder="Confirm Password" name="pwd2" required><br>
+			<input type="Submit" value="Register" id="button">
+		</form>
+	</section>
+	<aside>
+		<h3 id="asideh">ALREADY A STUDENT? LOGIN</h3>
+		<form action="" method="" id="form2" autocomplete>
+			<input type="text" placeholder="User name" name="u.name" maxlength="40" autocomplete required id="form2name"><br>
+			<input type="password" placeholder="Password" name="pwd1" required autocomplete id='form2pwd'><br>
+			<input type='checkbox' name="remember" id="checkbox"> <span id="checkboxtxt">Remember me?</span>
+			<input type="Submit" value="Login" id="button2"><br>
+			<a href="">Forgot Password?</a>
+		</form>
+	</aside>
+
+</body>
+</html>
